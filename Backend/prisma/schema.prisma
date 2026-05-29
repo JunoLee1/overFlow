@@ -17,5 +17,7 @@ datasource db {
 model Company{
   id Int @id @default(autoincrement())
   name String @unique
-  biz_no String      @unique @db.VarChar(10)
+  biz_no String   @unique @db.VarChar(10)
+  created_at DateTime  @default(now())
+  deleted_at DateTime?
 }
