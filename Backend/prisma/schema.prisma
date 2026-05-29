@@ -10,4 +10,12 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Company{
+  id Int @id @default(autoincrement())
+  name String @unique
+  biz_no String      @unique @db.VarChar(10)
 }
