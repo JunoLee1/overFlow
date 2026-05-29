@@ -15,9 +15,16 @@ datasource db {
 
 
 model Company{
-  id Int @id @default(autoincrement())
+  id String @id @default(cuid())
   name String @unique
   biz_no String   @unique @db.VarChar(10)
   created_at DateTime  @default(now())
   deleted_at DateTime?
+  users      User[]
+}
+
+model User {
+  id         String @id @default(cuid())
+  company_id String
+  company Company @relation(fields: [company_id], references: [id])
 }
