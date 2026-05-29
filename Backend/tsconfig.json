@@ -5,7 +5,7 @@
     "outDir": "./dist",
 
     
-    "module": "commonjs",
+    "module": "Node16",
     "target": "esnext",
    
     "lib": ["esnext"],
@@ -26,7 +26,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
      "paths": {
       "@test/*": ["./test/*"]
     }
