@@ -1,6 +1,6 @@
 import express from "express"
 import cookieParser from "cookie-parser"
-import APIRouter from "./apiRouter"
+import APIRouter from "./apiRouter.js"
 import cors from "cors"
 import * as dotenv from "dotenv";
 
