@@ -3,8 +3,10 @@
 function DashboardPage(){
     return (
         <div>
-            
-        </div>
-        
+            <SummaryCards/>
+            <PendingOrderList/>
+            <UpcommingReceiptList/>
+            <ActivityFeed/>
+        </div> 
     )
 }
