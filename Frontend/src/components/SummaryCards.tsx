@@ -11,6 +11,17 @@ export default function SummaryCards() {
   // TODO: 백엔드 구현 후 fetch로 교체
   const [summaryCards] = useState(MOCK_CARDS);
   const [isLoading] = useState(false);
+  /*
+  useEffect(() => {
+    async function loadSummaryCards() {
+      const res = await fetch("/api/v1/dashboard/summary");
+      const data = await res.json();
+      setSummaryCards(data.cards);
+      setIsLoading(false);
+    }
+    loadSummaryCards();
+  }, []);
+  */
   return(
     <div>
         {isLoading?(
