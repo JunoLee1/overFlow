@@ -1,12 +1,9 @@
 //import {useState, useEffect} from "react";
-
-function DashboardPage(){
+import SummaryCards from"../components/SummaryCards"
+export default function DashboardPage(){
     return (
         <div>
             <SummaryCards/>
-            <PendingOrderList/>
-            <UpcommingReceiptList/>
-            <ActivityFeed/>
         </div> 
     )
 }
