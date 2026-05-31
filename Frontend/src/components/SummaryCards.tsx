@@ -8,7 +8,7 @@ const MOCK_CARDS = [
 ];
 
 export default function SummaryCards() {
-  // TODO: 백엔드 구현 후 fetch로 교체
+  //TODO: 백엔드 구현 후 fetch로 교체
   const [summaryCards] = useState(MOCK_CARDS);
   const [isLoading] = useState(false);
   /*
